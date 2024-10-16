@@ -4,32 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    <header>
+    <header class ="cabecera">
         <img src="img/logo.webp" alt="Logo Proyecto Web">
-        <a href="#">Registro</a>
-        <a href="#">Login</a>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicio</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Cliente</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
-        </nav>
+        <div class="botones">
+            <a href="#">Registro</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="secundarias/servicios.html">Servicio</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Cliente</a></li>
+                    <li><a href="secundarias/contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
-    <section>
+    <section class="carrusel">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut aperiam, voluptatum perspiciatis maxime omnis tempora modi libero sed quam architecto expedita, culpa at repellat quaerat quo ducimus, vel adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut aperiam, voluptatum perspiciatis maxime omnis tempora modi libero sed quam architecto expedita, culpa at repellat quaerat quo ducimus, vel adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut aperiam, voluptatum perspiciatis maxime omnis tempora modi libero sed quam architecto expedita, culpa at repellat quaerat quo ducimus, vel adipisci.</p>
     </section>
-    <section>
+    <section class="container"> 
         <article>
                 <h1>Nuevas frecuencias del espectro radioeléctrico se adjudicarán tras decreto; en Loja estaría lleno</h1>
                 <p>El presidente Daniel Noboa, mediante el Decreto Ejecutivo N.º 421, ordenó reformar varios artículos e incisos del Reglamento General a la Ley Orgánica de Comunicación; entre los cambios consta una nueva adjudicación de frecuencias, publicitar bebidas con menos del 5% de alcohol, entre otros.</p>
                 <h2>Circunstancias</h2>
                 <p>El mandatario dispuso que la Agencia de Regulación y Control de las Telecomunicaciones (Arcotel) tiene un plazo máximo de 60 días para convocar al proceso de la adjudicación de frecuencias del espectro radioeléctrico.</p>
                 <img src="img/reforma-ley-de-comunicacion.webp" alt="Reforma ">
+                <h3>Tabla</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Encabezado 1</th>
+                            <th>Encabezado 2</th>
+                            <th>Encabezado 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1.1</td>
+                            <td>Dato 1.2</td>
+                            <td>Dato 1.3</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 2.1</td>
+                            <td>Dato 2.2</td>
+                            <td>Dato 2.3</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 3.1</td>
+                            <td>Dato 3.2</td>
+                            <td>Dato 3.3</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 4.1</td>
+                            <td>Dato 4.2</td>
+                            <td>Dato 4.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Formulario</h3>
+                <form action="/submit" method="post">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+            
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <input type="submit" value="Registrarse">
+                </form>
         </article>
         <article>
             <h1>Nuevas frecuencias del espectro radioeléctrico se adjudicarán tras decreto; en Loja estaría lleno</h1>
@@ -39,15 +86,24 @@
             <img src="img/reforma-ley-de-comunicacion.webp" alt="Reforma ">
     </article>
     </section>
-    <aside>
-        <h3>Banco de Loja</h3>
-    </aside>
-    <aside>
-        <h3>Banco Pichincha</h3>
-    </aside>
-    <aside>
-        <h3>Banco Rumiñahui</h3>
-    </aside>
+    <div class="container">
+        <aside>
+            <h3>Banco de Loja</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex maiores dolorum sint magni nobis eius dolore temporibus, blanditiis repudiandae consequuntur nisi neque reprehenderit distinctio pariatur laborum suscipit, perspiciatis labore tempore!</p>
+        </aside>
+        <aside>
+            <h3>Banco Pichincha</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex maiores dolorum sint magni nobis eius dolore temporibus, blanditiis repudiandae consequuntur nisi neque reprehenderit distinctio pariatur laborum suscipit, perspiciatis labore tempore!</p>
+        </aside>
+        <aside>
+            <h3>Banco Rumiñahui</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex maiores dolorum sint magni nobis eius dolore temporibus, blanditiis repudiandae consequuntur nisi neque reprehenderit distinctio pariatur laborum suscipit, perspiciatis labore tempore!</p>
+        </aside>
+        <aside>
+            <h3>Banco Rumiñahui</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex maiores dolorum sint magni nobis eius dolore temporibus, blanditiis repudiandae consequuntur nisi neque reprehenderit distinctio pariatur laborum suscipit, perspiciatis labore tempore!</p>
+        </aside>
+    </div>
     <footer>Diana Torres - 2024</footer>
 </body>
 </html>
